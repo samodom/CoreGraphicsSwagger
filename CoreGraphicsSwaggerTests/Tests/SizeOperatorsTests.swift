@@ -19,9 +19,9 @@ class SizeOperatorsTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        positiveSize1 = CGSize(width: positiveRandomDouble(), height: positiveRandomDouble())
-        positiveSize2 = CGSize(width: positiveRandomDouble(), height: positiveRandomDouble())
-        negativeSize = CGSize(width: -positiveRandomDouble(), height: -positiveRandomDouble())
+        positiveSize1 = CGSize(width: PositiveRandomDouble(), height: PositiveRandomDouble())
+        positiveSize2 = CGSize(width: PositiveRandomDouble(), height: PositiveRandomDouble())
+        negativeSize = CGSize(width: -PositiveRandomDouble(), height: -PositiveRandomDouble())
     }
     
     override func tearDown() {
@@ -92,13 +92,4 @@ class SizeOperatorsTests: XCTestCase {
         XCTAssertEqual(result.height, fabs(negativeSize.height), "The absolute value of a negative size should have the absolute value of the height")
     }
 
-}
-
-private func positiveRandomDouble() -> Double {
-    var double = drand48()
-    while double == 0.0 {
-        double = drand48()
-    }
-
-    return fabs(double)
 }

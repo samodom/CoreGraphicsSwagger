@@ -19,9 +19,9 @@ class PointOperatorsTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        positivePoint1 = CGPoint(x: drand48(), y: drand48())
-        positivePoint2 = CGPoint(x: drand48(), y: drand48())
-        negativePoint = CGPoint(x: drand48(), y: drand48())
+        positivePoint1 = CGPoint(x: PositiveRandomDouble(), y: PositiveRandomDouble())
+        positivePoint2 = CGPoint(x: PositiveRandomDouble(), y: PositiveRandomDouble())
+        negativePoint = CGPoint(x: -PositiveRandomDouble(), y: -PositiveRandomDouble())
     }
     
     override func tearDown() {

@@ -15,6 +15,7 @@
 		0A3784C31A0ECBCB0003C7F3 /* SizeOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3784C21A0ECBCB0003C7F3 /* SizeOperatorsTests.swift */; };
 		0A3784C51A0ECE450003C7F3 /* CGSizeOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3784C41A0ECE450003C7F3 /* CGSizeOperators.swift */; };
 		0A3784C61A0ECE480003C7F3 /* CGSizeOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3784C41A0ECE450003C7F3 /* CGSizeOperators.swift */; };
+		0A3784CA1A0ED8750003C7F3 /* TestingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3784C91A0ED8750003C7F3 /* TestingHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		0A2638FF1A0EB3B500C9D68D /* CGPointOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointOperators.swift; sourceTree = "<group>"; };
 		0A3784C21A0ECBCB0003C7F3 /* SizeOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeOperatorsTests.swift; sourceTree = "<group>"; };
 		0A3784C41A0ECE450003C7F3 /* CGSizeOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGSizeOperators.swift; sourceTree = "<group>"; };
+		0A3784C91A0ED8750003C7F3 /* TestingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		0A2638FC1A0EB25D00C9D68D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0A3784C91A0ED8750003C7F3 /* TestingHelpers.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				0A3784C61A0ECE480003C7F3 /* CGSizeOperators.swift in Sources */,
 				0A3784C31A0ECBCB0003C7F3 /* SizeOperatorsTests.swift in Sources */,
 				0A2639011A0EB65900C9D68D /* CGPointOperators.swift in Sources */,
+				0A3784CA1A0ED8750003C7F3 /* TestingHelpers.swift in Sources */,
 				0A2638FE1A0EB27700C9D68D /* PointOperatorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
