@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		0A2638E51A0EB14000C9D68D /* CoreGraphicsSwagger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2638E41A0EB14000C9D68D /* CoreGraphicsSwagger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A2638EB1A0EB14000C9D68D /* CoreGraphicsSwagger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2638DF1A0EB14000C9D68D /* CoreGraphicsSwagger.framework */; };
-		0A2638F21A0EB14000C9D68D /* CoreGraphicsSwaggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2638F11A0EB14000C9D68D /* CoreGraphicsSwaggerTests.swift */; };
+		0A2638FE1A0EB27700C9D68D /* PointOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2638FD1A0EB27700C9D68D /* PointOperatorsTests.swift */; };
+		0A2639001A0EB3B500C9D68D /* CGPointOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2638FF1A0EB3B500C9D68D /* CGPointOperators.swift */; };
+		0A2639011A0EB65900C9D68D /* CGPointOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2638FF1A0EB3B500C9D68D /* CGPointOperators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,8 @@
 		0A2638E41A0EB14000C9D68D /* CoreGraphicsSwagger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsSwagger.h; sourceTree = "<group>"; };
 		0A2638EA1A0EB14000C9D68D /* CoreGraphicsSwaggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreGraphicsSwaggerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2638F01A0EB14000C9D68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A2638F11A0EB14000C9D68D /* CoreGraphicsSwaggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsSwaggerTests.swift; sourceTree = "<group>"; };
+		0A2638FD1A0EB27700C9D68D /* PointOperatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointOperatorsTests.swift; sourceTree = "<group>"; };
+		0A2638FF1A0EB3B500C9D68D /* CGPointOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointOperators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			children = (
 				0A2638E41A0EB14000C9D68D /* CoreGraphicsSwagger.h */,
 				0A2638E21A0EB14000C9D68D /* Supporting Files */,
+				0A2638FF1A0EB3B500C9D68D /* CGPointOperators.swift */,
 			);
 			path = CoreGraphicsSwagger;
 			sourceTree = "<group>";
@@ -88,8 +92,9 @@
 		0A2638EE1A0EB14000C9D68D /* CoreGraphicsSwaggerTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A2638F11A0EB14000C9D68D /* CoreGraphicsSwaggerTests.swift */,
 				0A2638EF1A0EB14000C9D68D /* Supporting Files */,
+				0A2638FB1A0EB25D00C9D68D /* Tests */,
+				0A2638FC1A0EB25D00C9D68D /* Tools */,
 			);
 			path = CoreGraphicsSwaggerTests;
 			sourceTree = "<group>";
@@ -100,6 +105,21 @@
 				0A2638F01A0EB14000C9D68D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A2638FB1A0EB25D00C9D68D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A2638FD1A0EB27700C9D68D /* PointOperatorsTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0A2638FC1A0EB25D00C9D68D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2639001A0EB3B500C9D68D /* CGPointOperators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2638F21A0EB14000C9D68D /* CoreGraphicsSwaggerTests.swift in Sources */,
+				0A2639011A0EB65900C9D68D /* CGPointOperators.swift in Sources */,
+				0A2638FE1A0EB27700C9D68D /* PointOperatorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,25 +341,30 @@
 		0A2638F61A0EB14000C9D68D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CoreGraphicsSwagger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0A2638F71A0EB14000C9D68D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = CoreGraphicsSwagger/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -349,6 +376,7 @@
 		0A2638F91A0EB14000C9D68D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -360,12 +388,14 @@
 				INFOPLIST_FILE = CoreGraphicsSwaggerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		0A2638FA1A0EB14000C9D68D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -395,6 +425,7 @@
 				0A2638F71A0EB14000C9D68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A2638F81A0EB14000C9D68D /* Build configuration list for PBXNativeTarget "CoreGraphicsSwaggerTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +434,7 @@
 				0A2638FA1A0EB14000C9D68D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
