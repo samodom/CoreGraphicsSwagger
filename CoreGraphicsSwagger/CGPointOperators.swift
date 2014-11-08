@@ -32,3 +32,17 @@ public func *(lhs: CGPoint, rhs: CGFloat) -> CGPoint {
 public func *(lhs: CGFloat, rhs: CGPoint) -> CGPoint {
     return rhs * lhs
 }
+
+/**
+  Simple component-wise negation of a point
+*/
+public prefix func -(point: CGPoint) -> CGPoint {
+    return CGPoint(x: -point.x, y: -point.y)
+}
+
+/**
+  Simple component-wise absolute value of a point
+*/
+public func abs(point: CGPoint) -> CGPoint {
+    return CGPoint(x: fabs(point.x), y: fabs(point.y))
+}

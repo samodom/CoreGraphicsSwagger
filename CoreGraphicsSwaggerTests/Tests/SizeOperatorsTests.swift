@@ -78,7 +78,7 @@ class SizeOperatorsTests: XCTestCase {
         result = -negativeSize
         XCTAssertEqual(result.width, -negativeSize.width, "The width should be negated")
         XCTAssertEqual(result.height, -negativeSize.height, "The height should be negated")
-}
+    }
 
     func testAbsoluteSize() {
         result = abs(CGSizeZero)
