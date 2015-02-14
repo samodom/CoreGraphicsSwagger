@@ -19,6 +19,9 @@
 		0A3784CA1A0ED8750003C7F3 /* TestingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3784C91A0ED8750003C7F3 /* TestingHelpers.swift */; };
 		0A3784CC1A0EDB910003C7F3 /* CGRectOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3784CB1A0EDB910003C7F3 /* CGRectOperators.swift */; };
 		0A3784CD1A0EDBDE0003C7F3 /* CGRectOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3784CB1A0EDB910003C7F3 /* CGRectOperators.swift */; };
+		0ACE40DF1A8FF12D00533458 /* LineDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE40DE1A8FF12D00533458 /* LineDashTests.swift */; };
+		0ACE40E11A9009D300533458 /* CGLineDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE40E01A9009D300533458 /* CGLineDash.swift */; };
+		0ACE40E21A9009D500533458 /* CGLineDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE40E01A9009D300533458 /* CGLineDash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 		0A3784C71A0ED7500003C7F3 /* RectOperatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectOperatorTests.swift; sourceTree = "<group>"; };
 		0A3784C91A0ED8750003C7F3 /* TestingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingHelpers.swift; sourceTree = "<group>"; };
 		0A3784CB1A0EDB910003C7F3 /* CGRectOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectOperators.swift; sourceTree = "<group>"; };
+		0ACE40DE1A8FF12D00533458 /* LineDashTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDashTests.swift; sourceTree = "<group>"; };
+		0ACE40E01A9009D300533458 /* CGLineDash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGLineDash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 		0A2638E11A0EB14000C9D68D /* CoreGraphicsSwagger */ = {
 			isa = PBXGroup;
 			children = (
+				0ACE40E01A9009D300533458 /* CGLineDash.swift */,
 				0A2638FF1A0EB3B500C9D68D /* CGPointOperators.swift */,
 				0A3784CB1A0EDB910003C7F3 /* CGRectOperators.swift */,
 				0A3784C41A0ECE450003C7F3 /* CGSizeOperators.swift */,
@@ -124,6 +130,7 @@
 		0A2638FB1A0EB25D00C9D68D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0ACE40DE1A8FF12D00533458 /* LineDashTests.swift */,
 				0A2638FD1A0EB27700C9D68D /* PointOperatorsTests.swift */,
 				0A3784C71A0ED7500003C7F3 /* RectOperatorTests.swift */,
 				0A3784C21A0ECBCB0003C7F3 /* SizeOperatorsTests.swift */,
@@ -247,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3784CC1A0EDB910003C7F3 /* CGRectOperators.swift in Sources */,
+				0ACE40E11A9009D300533458 /* CGLineDash.swift in Sources */,
 				0A3784C51A0ECE450003C7F3 /* CGSizeOperators.swift in Sources */,
 				0A2639001A0EB3B500C9D68D /* CGPointOperators.swift in Sources */,
 			);
@@ -257,6 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3784C61A0ECE480003C7F3 /* CGSizeOperators.swift in Sources */,
+				0ACE40DF1A8FF12D00533458 /* LineDashTests.swift in Sources */,
+				0ACE40E21A9009D500533458 /* CGLineDash.swift in Sources */,
 				0A3784C31A0ECBCB0003C7F3 /* SizeOperatorsTests.swift in Sources */,
 				0A3784C81A0ED7500003C7F3 /* RectOperatorTests.swift in Sources */,
 				0A2639011A0EB65900C9D68D /* CGPointOperators.swift in Sources */,
