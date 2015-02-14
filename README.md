@@ -11,9 +11,9 @@ Extensions to CoreGraphics for Swift
 - `CGRect` union and `CGPoint` containment
 
 
-### Convenience type for line dashes
+### Convenience type and type aliases for line dashes
 
-
+```swift
 typealias CGLineDashPhase = CGFloat
 typealias CGLineDashPatternLength = CGFloat
 typealias CGLineDashPattern = [CGLineDashPatternLength]
@@ -22,3 +22,4 @@ struct CGLineDash {
     let phase: CGLineDashPhase
     let pattern: CGLineDashPattern
 }
+```
