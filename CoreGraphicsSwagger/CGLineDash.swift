@@ -39,4 +39,9 @@ public struct CGLineDash {
     */
     public let pattern: CGLineDashPattern
 
+    public init(phase: CGLineDashPhase, pattern: CGLineDashPattern) {
+        self.phase = phase
+        self.pattern = pattern
+    }
+
 }
