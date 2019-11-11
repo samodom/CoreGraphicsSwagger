@@ -1,5 +1,4 @@
-CoreGraphicsSwagger
-===================
+# CoreGraphicsSwagger - DEPRECATED
 
 Extensions to CoreGraphics for Swift
 
